@@ -1,0 +1,113 @@
+@import "/CSS/navbar.css";
+@import "/CSS/parallax.css";
+@import "/CSS/home.css";
+@import "/CSS/about.css";
+@import "/CSS/projects.css";
+@import "/CSS/contact.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+
+.sectionheader {
+  font-size: 5rem;
+}
+
+.sectionwrapper {
+  margin-top: 75px;
+}
+
+hr {
+  width: 80%;
+  margin: 30px auto 0px auto;
+}
+
+@media screen and (min-width: 601px) {
+  hr {
+    width: 30vw;
+  }
+
+  .home {
+    height: 100vh;
+  }
+
+  .contact {
+    height: 60vh;
+  }
+
+  section {
+    min-height: 0vh;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+    position: absolute;
+    top: -40px;
+    margin-right: 120px;
+    width: 20%;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+  }
+
+  section {
+    padding: 0 500px 0 500px;
+  }
+
+  .homecard h1 {
+    font-size: 80px;
+    font-weight: lighter;
+  }
+
+  .homecard h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .courses {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .courseswrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+}

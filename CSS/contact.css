@@ -1,0 +1,34 @@
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.socialmedia img {
+  height: 60px;
+  width: 60px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  font-size: 1.17em;
+  margin: 20px 0px 10px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  outline: none;
+  border: none;
+}
+
+form textarea {
+  height: 100px;
+}
+
+.resumebutton {
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

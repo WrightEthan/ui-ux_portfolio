@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link
+    href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+<header>
+    <nav id="nav">
+        <h1 style="border: 2px solid black; padding: 5px; border-radius: 3px;">E M W</h1>
+        <ul class="hidden">
+            <li><a data-page="home" href="#home">Home</a></li>
+            <li><a data-page="about" href="#about">About</a></li>
+            <li><a data-page="projects" href="#projects">Projects</a></li>
+            <li><a data-page="contact" href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+            <div id="wrapper">
+                <div class="circle icon">
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </div>
+            </div>
+</header>
+<main>
+    <div class="hidden" id="filter"></div>
+    <div class="parallaxcontainer">
+        <div class="parallax">
+            <section data-index="0" class="home" id="home" style="justify-content: center;">
+                <div class="homecard">
+                        <img class="me" src="./assets/ZWS_5330_Square.jpg">
+                    <h1>Ethan Wright</h1>
+                    <h3>Developer, Designer, and Educator</h3>            
+        </section>
+        <section data-index="1" class="about" id="about">
+            <div class="sectionwrapper" id="aboutwrapper">
+            <h2 class="sectionheader" style="font-size: 3.5rem">Hello there!</h2><h3> I'm Ethan.</h3>
+            <br>
+            <h4>I'm a 25 year old Indianapolis native. <br>I started my journey as a developer in the summer of 2019. I have spent the last year as an intern in the Data Analytics department of LHP Engineering creating user interfaces for new products, prototypes, and enhancements of existing products and services.<br><br>I have completed three 12-week bootcamps in separate topics from the Eleven Fifty Academy:</h4>
+            <br>
+            <div class="courseswrapper">
+            <div class="courses"><img src="./assets/seo.svg"><h4><span style="font-size: 1.25em;">Web Development</span><br>A focus in JavaScript, HTML, CSS, and the React and Angular frameworks.</h4></div>
+            <div class="courses"><img src="./assets/code.svg"><h4><span>Software Development</span><br>Centered around the .NET framework, we were taught about object oriented programming written in C#.</h4> </div>
+            <div class="courses"><img src="./assets/design.svg"><h4><span style="font-size: 1.25em;">UI/UX Design</span><br>Using tools like PhotoShop, Figma, and the CIW Authorized Curriculum, I learned the best practices in UI and UX Design.</h4></div>
+        </div>
+        <h5>Other skills include: <br>
+            Git/Github, Leaflet JS, Bootstrap, Material UI, Procreate for iOS, Vector image design, and extensive desktop computer hardware knowledge.
+        </h5>
+        </div>
+        <hr>
+    </section>
+        <section data-index="2" class="projects" id="projects">
+            <div class="sectionwrapper" id="projectswrapper">
+                <h2 class="sectionheader">Projects</h2><h3>(and click here for a resume)</h3>
+                <form method="GET" action="./assets/EthanWResume.docx"><button type="submit" class="resumebutton"><img src="./assets/download.svg" style="height: 15px; width: 15px;"></button></form>
+                <div class="card"><img class="ducati" src="./assets/ducati.jpeg"><h4><span style="font-size: 1.25em;">Augmented Reality</span><br>Designed and coded this UI for Ducati's release of the Multistrada 1260E Pikes Peak, used on the show room floor by Ducati.</h4>
+                </div>
+                <div class="card"><img class="smartfactory" src="./assets/Screenshot (7).png"><h4><span>Integrated Workplace</span><br>Centered around a Leaflet JS map utilizing live telematics, we worked to create tools to make factory floor a safer and better informed place.</h4> </div>
+                <div class="card"><img class="smartfactory" src="./assets/Screenshot (5).png"><h4><span>Faux-Storefront</span><br>An opportunity for me to flex my design skills and creativity -- a functional storefront website.</h4></div>
+                <h4>And many more.</h4>
+                <br>
+                <h5>(it probably also goes without saying that I also made this portfolio)</h5>
+            </section>
+        <hr>
+        <section data-index="3" class="contact" id="contact">
+            <div class="sectionwrapper" id="contactwrapper">
+                <h2 class="sectionheader" style="font-size: 3rem">Contact Me</h2>
+                <h3>Love the code? Reach out using the information below!</h3>
+                <div class="socialmedia">
+                    <a href="https://www.instagram.com/ethanmwright/"><img src="./assets/instagram.svg"></a>
+                    <a href="https://www.linkedin.com/in/ethan-wright-1a0738188/"><img src="./assets/linkedin.svg"></a>
+                    <a href="https://github.com/WrightEthan"><img src="./assets/github.svg"></a>
+                </div>
+                <form id ="contact-form" method="post" action="contact.php">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                    <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+
+                        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                </form>
+            </div>
+        </section>
+    </div>
+  </div>
+</main>
+</body>
+</html>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="site.js"></script>

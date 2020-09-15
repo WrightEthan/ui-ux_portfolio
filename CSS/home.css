@@ -1,0 +1,10 @@
+.homecard {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.me {
+  max-width: 35%;
+  height: auto;
+  border-radius: 50%;
+}
