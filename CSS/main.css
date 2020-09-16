@@ -1,9 +1,9 @@
-@import "/CSS/navbar.css";
-@import "/CSS/parallax.css";
-@import "/CSS/home.css";
-@import "/CSS/about.css";
-@import "/CSS/projects.css";
-@import "/CSS/contact.css";
+@import "./navbar.css";
+@import "./parallax.css";
+@import "./home.css";
+@import "./about.css";
+@import "./projects.css";
+@import "./contact.css";
 
 * {
   margin: 0;
